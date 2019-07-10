@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Updated to p3
 """
 Project Euler problem 1
 
@@ -21,5 +22,5 @@ def f(limit):
 
 
 if __name__ == '__main__':
-    print f(10)
-    print f(1000)
+    print (f(10))
+    print (f(1000))
