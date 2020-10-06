@@ -6,14 +6,14 @@ def solve(tri):
     given a triangle of numbers, find the costliest path through
     """
 
-    print "in solve with tri = ", tri
+    print("in solve with tri = ", tri)
     while len(tri) > 1:
         t0 = tri.pop()
         t1 = tri.pop()
-        print "t0: ", t0
-        print "t1: ", t1
+        print("t0: ", t0)
+        print("t1: ", t1)
         result = [max(t0[i], t0[i + 1]) + t for i, t in enumerate(t1)]
-        print "result is ", result
+        print("result is ", result)
         tri.append(result)
         #tri.append([max(t0[i], t0[i+1]) + t for i,t in enumerate(t1)])
     return tri[0][0]
@@ -41,7 +41,7 @@ def main():
 27 02 92 23 08 71 76 84 15 52 92 63 81 10 44 10 69 93"""
     data = urllib2.urlopen(
         "http://www.yodlecareers.com/puzzles/triangle.txt").read()
-    print data
-    print solve([map(int, row.split()) for row in data.splitlines()])
+    print(data)
+    print(solve([map(int, row.split()) for row in data.splitlines()]))
 
 main()
