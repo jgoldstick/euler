@@ -23,13 +23,13 @@ def get_primes(limit):
             primes.append(n)
             # print primes
             if not limit % n:
-                print "limit:  %d  n: %d" % (limit, n)
+                print("limit:  %d  n: %d" % (limit, n))
                 prime_factors.append(n)
                 new_limit = limit
                 while not new_limit % n:
                     new_limit = new_limit / n
-                    print "new limit: %d" % new_limit
-                print prime_factors
+                    print("new limit: %d" % new_limit)
+                print(prime_factors)
         limit = new_limit
         n += 2  # only odds can be prime except 2
     return [primes, prime_factors]
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     limit = 600851475143
     #limit = 15
     primes, prime_factors = get_primes(limit)
-    print "All prime numbers less than %d" % limit
-    print primes
-    print primes[-1], prime_factors
-    print "Largest prime factor is %d" % prime_factors[-1]
+    print("All prime numbers less than %d" % limit)
+    print (primes)
+    print (primes[-1], prime_factors)
+    print ("Largest prime factor is %d" % prime_factors[-1])
