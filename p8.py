@@ -20,9 +20,9 @@ def largest_product(n, data):
 
         if product > max_candidate:
             max_candidate = product
-            print candidate, max_candidate, product
+            print(candidate, max_candidate, product)
         data.pop(0)
     return max_candidate
 
-print largest_product(4, data_1)
-print largest_product(13, data_2)
+print(largest_product(4, data_1))
+print(largest_product(13, data_2))

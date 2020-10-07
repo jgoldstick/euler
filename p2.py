@@ -25,7 +25,7 @@ def fib(limit):
 def sum_evens(limit):
     s = 0
     for r in fib(limit):
-        print (r,)
+        print((r,))
         if not r % 2:
             s += r
     return s
@@ -34,4 +34,4 @@ if __name__ == '__main__':
     for limit in (90, 4000000):
         print (limit)
         s = sum_evens(limit)
-        print("The sum of even values of the fibonacci sequence up to %d is %d" % (limit, s))
+        print(("The sum of even values of the fibonacci sequence up to %d is %d" % (limit, s)))

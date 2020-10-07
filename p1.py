@@ -23,5 +23,5 @@ def f(limit):
 
 
 if __name__ == '__main__':
-    print (f(10))
-    print (f(1000))
+    print((f(10)))
+    print((f(1000)))

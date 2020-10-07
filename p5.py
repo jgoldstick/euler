@@ -17,11 +17,11 @@ if __name__ == '__main__':
     not_found = True
     while not_found:
         for i in (number_range):
-            print i, candidate
+            print(i, candidate)
             if candidate % i:
                 candidate += number_range[-1]
                 break
         else:
-            print "Range is ", number_range
-            print "smallest number divisible by all in range is %d" % candidate
+            print("Range is ", number_range)
+            print("smallest number divisible by all in range is %d" % candidate)
             not_found = False

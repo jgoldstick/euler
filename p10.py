@@ -21,7 +21,7 @@ def get_primes(limit):
                 is_prime = False
                 break
         if is_prime:
-            print n, "is prime"
+            print(n, "is prime")
             primes.append(n)
             yield n
         n += 2  # only odds can be prime except 2
@@ -34,4 +34,4 @@ if __name__ == '__main__':
     limit = 2000000
     #limit = 20
     primes = [p for p in get_primes(limit)]
-    print primes, sum(primes)
+    print(primes, sum(primes))

@@ -21,7 +21,7 @@ def get_prime(cardinal):
         if is_prime:
             primes.append(n)
             num_primes += 1
-            print "%d is the %d prime" % (n, num_primes)
+            print("%d is the %d prime" % (n, num_primes))
             if num_primes == cardinal:
                 return n
         n += 2
@@ -45,13 +45,13 @@ def get_primes(limit):
             primes.append(n)
             # print primes
             if not limit % n:
-                print "limit:  %d  n: %d" % (limit, n)
+                print("limit:  %d  n: %d" % (limit, n))
                 prime_factors.append(n)
                 new_limit = limit
                 while not new_limit % n:
                     new_limit = new_limit / n
-                    print "new limit: %d" % new_limit
-                print prime_factors
+                    print("new limit: %d" % new_limit)
+                print(prime_factors)
         limit = new_limit
         n += 2  # only odds can be prime except 2
     return [primes, prime_factors]
@@ -59,6 +59,6 @@ def get_primes(limit):
 
 if __name__ == '__main__':
     cardinal = 6
-    print get_prime(cardinal)
+    print(get_prime(cardinal))
     cardinal = 10001
-    print get_prime(cardinal)
+    print(get_prime(cardinal))

@@ -6,7 +6,7 @@
 What is the sum of the digits of the number 2**1000?
 """
 d = sum(map(int, list(str(2**15))))
-print d
+print(d)
 
 d = sum(map(int, list(str(2**1000))))
-print d
+print(d)

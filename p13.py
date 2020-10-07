@@ -7,4 +7,4 @@ s = 0
 f = open("p13.txt")
 for n in f:
     s += int(n)
-print s, str(s)[:10]
+print(s, str(s)[:10])

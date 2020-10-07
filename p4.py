@@ -10,11 +10,11 @@ for i in range(100, 1000):
         candidate = i * j
         # print i, j, str(candidate), str(candidate)[::-1]
         if str(candidate) == str(candidate)[::-1]:
-            print candidate
+            print(candidate)
             candidates.append(candidate)
 
-print candidates
-print max(candidates)
+print(candidates)
+print(max(candidates))
 
 """
 revisited
@@ -26,4 +26,4 @@ while True:
         break
     candidate -= 1
 
-print candidate
+print(candidate)

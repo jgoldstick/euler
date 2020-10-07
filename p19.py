@@ -62,9 +62,9 @@ if __name__ == '__main__':
     for y in xrange(1900, 2001):
         year_type = is_leapyear(y)
         for m in xrange(12):
-            print "%s, %d starts on %s" % (MONTH[m], y, DAY[starting_day])
+            print("%s, %d starts on %s" % (MONTH[m], y, DAY[starting_day]))
             starting_day = (starting_day + days_added[m][int(year_type)]) % 7
             if starting_day == 0 and y > 1900:
                 starting_sunday_count += 1
-                print "Months that started on Sunday: ", starting_sunday_count
-    print starting_sunday_count
+                print("Months that started on Sunday: ", starting_sunday_count)
+    print(starting_sunday_count)
